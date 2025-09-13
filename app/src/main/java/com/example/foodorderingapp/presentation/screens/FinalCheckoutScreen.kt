@@ -68,8 +68,8 @@ fun FinalCheckoutScreen(navController: NavController) {
     var name by remember { mutableStateOf(value = "Romius Pizza And Burger") }
     var time by remember { mutableStateOf(value = "37 mins") }
     var productName by remember { mutableStateOf(value = "Peri Peri Burger") }
-    var price by remember { mutableStateOf(value = "₹249") }
-    var newPrice by remember { mutableStateOf(value = "₹268") }
+    var price by remember { mutableStateOf(value = "Rs249") }
+    var newPrice by remember { mutableStateOf(value = "Rs268") }
 
     Scaffold(
         modifier = Modifier
@@ -96,7 +96,7 @@ fun FinalCheckoutScreen(navController: NavController) {
                                     .padding(top = 10.dp, bottom = 12.dp)
                             )
                             Text(
-                                text = "₹268, Shanti Nagar, Ghaziabad..",
+                                text = "Rs268, Haripur, T.I.P Colony..",
                                 fontSize = 12.sp,
                                 color = Color.DarkGray
                             )
@@ -311,7 +311,7 @@ fun ProductCard(productName: String, price: String) {
                 Spacer(modifier = Modifier.height(2.dp))
 
                 Text(
-                    text = "₹30",
+                    text = "Rs30",
                     color = Color.Black,
                     fontSize = 14.sp,
                     textAlign = TextAlign.End
@@ -590,7 +590,7 @@ fun AddressAndBillCard(time: String, newPrice: String) {
                     )
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        text = "265, Shanti Nagar, Ghaziabad...",
+                        text = "265, Haripur, T.I.P Colony...",
                         fontSize = 12.sp,
                         color = Color.Gray
                     )
@@ -628,13 +628,13 @@ fun AddressAndBillCard(time: String, newPrice: String) {
                     modifier = Modifier.size(18.dp)
                 )
                 Text(
-                    text = "Himanshu Gaur ,",
+                    text = "Faizan Javed ,",
                     fontSize = 14.sp,
                     color = Color.DarkGray,
                     modifier = Modifier.padding(start = 8.dp)
                 )
                 Text(
-                    text = "+91-8872551231",
+                    text = "+92-3445821796",
                     fontSize = 14.sp,
                     color = Color.Black,
                     fontWeight = FontWeight.SemiBold,

@@ -18,7 +18,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.Info
@@ -49,6 +52,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
@@ -103,12 +107,9 @@ fun BottomSheetToAddProduct(onDismiss: () -> Unit, navController: NavController)
                         ) {
                             Text(
                                 text = "-",
-
                                 color = colorResource(R.color.purple_500),
                                 fontSize = 20.sp,
-
-
-                                )
+                            )
                         }
                         // Counter value
                         Box(
@@ -137,11 +138,10 @@ fun BottomSheetToAddProduct(onDismiss: () -> Unit, navController: NavController)
                                 color = colorResource(R.color.purple_500)
                             )
                         }
-
                     }
                     Spacer(modifier = Modifier.width(8.dp))
 
-// Add item button
+                    // Add item button
                     Button(
                         onClick = {
                             navController.navigate(Routes.FinalCheckoutScreen)
@@ -153,7 +153,7 @@ fun BottomSheetToAddProduct(onDismiss: () -> Unit, navController: NavController)
                         shape = RoundedCornerShape(4.dp)
                     ) {
                         Text(
-                            text = "Add item ₹24",
+                            text = "Add item Rs24",
                             color = Color.White,
                             fontSize = 16.sp
                         )
@@ -166,6 +166,7 @@ fun BottomSheetToAddProduct(onDismiss: () -> Unit, navController: NavController)
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 4.dp)
+                    .verticalScroll(rememberScrollState()) // Added scrollable behavior
                     .background(color = Color.Transparent)
             ) {
                 Card(
@@ -331,10 +332,11 @@ fun BottomSheetToAddProduct(onDismiss: () -> Unit, navController: NavController)
                         }
                         Spacer(modifier = Modifier.height(18.dp))
 
-// Text input field
+                        // Text input field
                         TextField(
                             value = text,
                             onValueChange = { text = it },
+                            keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done),
                             placeholder = {
                                 Text(
                                     text = "e.g. Don't make it too spicy",

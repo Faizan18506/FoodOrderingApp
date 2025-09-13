@@ -112,7 +112,7 @@ fun QuickScreen(navController: NavController, listState: LazyListState) {
 fun QuickScreenComponents(navController: NavController, onAddClick: () -> Unit) {
     var productName by remember { mutableStateOf( "Peri Peri Burger") }
     var rating by remember { mutableStateOf( "4.2") }
-    var price by remember { mutableStateOf( "₹249") }
+    var price by remember { mutableStateOf( "Rs249") }
 
     Card(
         modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 16.dp),

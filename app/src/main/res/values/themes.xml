@@ -2,7 +2,7 @@
 <resources>
     <style name="Theme.KomotoSplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/redish</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/komato</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/fh</item>
         <item name="postSplashScreenTheme">@style/Theme.FoodOrderingApp</item>
     </style>
 

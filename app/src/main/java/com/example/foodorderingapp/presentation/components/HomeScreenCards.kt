@@ -64,10 +64,10 @@ fun HomeScreenCard(navController: NavController) {
                 horizontalArrangement = Arrangement.SpaceEvenly // Added a valid arrangement
             ) {
                 when (pager.currentPage) {
-                    0 -> PriceCard(name = "Veg-Biryani", price = "₹240")
-                    1 -> PriceCard(name = "Brick Oven Pizza", price = "₹259")
-                    2 -> PriceCard(name = "Spring Roll", price = "₹160")
-                    3 -> PriceCard(name = "Noodles", price = "₹130")
+                    0 -> PriceCard(name = "Veg-Biryani", price = "Rs240")
+                    1 -> PriceCard(name = "Brick Oven Pizza", price = "Rs259")
+                    2 -> PriceCard(name = "Spring Roll", price = "Rs160")
+                    3 -> PriceCard(name = "Noodles", price = "Rs130")
                 }
             }
             IconButton(onClick = { }) {
@@ -197,7 +197,7 @@ fun PageCount(pagerState: PagerState) {
 
 @Composable
 fun DetailCard() {
-    val restaurantName = remember { mutableStateOf("Haldiram's") }
+    val restaurantName = remember { mutableStateOf("Cheesious") }
     val rating = remember { mutableStateOf("4.2") }
 
     Card(
@@ -280,7 +280,7 @@ fun DetailCard() {
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
-                    text = "Flat ₹50 OFF on above ₹249",
+                    text = "Flat Rs50 OFF on above Rs249",
                     modifier = Modifier.padding(start = 4.dp),
                     fontSize = 14.sp,
                     fontWeight = FontWeight.SemiBold,

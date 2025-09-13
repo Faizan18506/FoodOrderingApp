@@ -90,7 +90,7 @@ fun LoginScreen1(
         ) {
             Box(modifier = Modifier.fillMaxWidth()) {
                 Image(
-                    painter = painterResource(R.drawable.komatologin),
+                    painter = painterResource(R.drawable.foodo),
                     contentDescription = "Komato Image"
                 )
                 Button(
@@ -124,19 +124,19 @@ fun LoginScreen1(
                 Text(
                     text = "Pakistan's #1 Food Delivery",
                     modifier = Modifier.align(Alignment.CenterHorizontally),
-                    fontSize = 30.sp,
+                    fontSize = 22.sp,
                     fontWeight = FontWeight.Bold
                 )
 
                 Text(
                     text = "and Dining App",
                     modifier = Modifier.align(Alignment.CenterHorizontally),
-                    fontSize = 30.sp,
+                    fontSize = 22.sp,
                     fontWeight = FontWeight.Bold
                 )
             }
 
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(1.dp))
 
             Row(
                 modifier = Modifier
@@ -164,7 +164,7 @@ fun LoginScreen1(
                     thickness = 0.8.dp
                 )
             }
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.height(1.dp))
             EmailTextField(
                 value = email,
                 onValueChange = { email = it },
@@ -181,7 +181,7 @@ fun LoginScreen1(
                 painterResource(R.drawable.padlock)
             )
 
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.height(8.dp))
             Button(
                 onClick = {
                     if (email.isNotBlank() && password.isNotBlank()) {
@@ -214,7 +214,7 @@ fun LoginScreen1(
                     )
                 }
             }
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.height(1.dp))
 
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -234,7 +234,7 @@ fun LoginScreen1(
             }
 
             OrComponent()
-            Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.height(1.dp))
 
             Column(
                 modifier = Modifier.fillMaxWidth(),

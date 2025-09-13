@@ -58,9 +58,9 @@ fun ParticularCardScreen(navController: NavController) {
     var time by remember { mutableStateOf("37 mins") }
     var distance by remember { mutableStateOf("2.6 km") }
     var address by remember { mutableStateOf("Crossing Republic") }
-    var discount by remember { mutableStateOf("Flat 50% Off on above ₹249") }
+    var discount by remember { mutableStateOf("Flat 50% Off on above Rs249") }
     var offers by remember { mutableStateOf("Offers") }
-    var price by remember { mutableStateOf("₹49") }
+    var price by remember { mutableStateOf("Rs49") }
     var productName by remember { mutableStateOf("Peri Peri Burger") }
     var uniqueness by remember { mutableStateOf("On Time Prepration") }
 
