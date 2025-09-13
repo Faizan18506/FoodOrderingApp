@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.KomotoSplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/redish</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/komato</item>
+        <item name="postSplashScreenTheme">@style/Theme.FoodOrderingApp</item>
+    </style>
+
+    <style name="Theme.FoodOrderingApp" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

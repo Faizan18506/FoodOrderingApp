@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFB8F6</color>
+    <color name="purple_500">#8A1010</color>
+    <color name="purple_700">#F370B3</color>
+    <color name="teal_200">#FF03DA</color>
+    <color name="teal_700">#FF0187</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    // Quick Screen
+    <color name="orange">#FB8500</color>
+    <color name="lightPink">#FFBF5F</color>
+    <color name="addButtonRed">#CE1022</color>
+    <color name="greyishBlack">#46495C</color>
+    <color name="redish">#E91663</color>
+    <color name="finalScreenCard">#F0F6EC</color>
+
+    // Profile screen Colors
+    <color name="ViewActivityClickableColor">#F96A30</color>
+    <color name="ZomatoGold">#FFB914</color>
+    <color name="greenDivider">#F12745</color>
+    <color name="greenLight">#FD8F30</color>
+    <color name="completedPercentageBackground">#FFFFFFE2</color>
+    <color name="percentage">#FAA913</color>
+    <color name="offWhiteBackground">#FEFE7F</color>
+</resources>
